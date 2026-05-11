@@ -1,6 +1,3 @@
-# TaskFlow
-TaskFlow is a MERN stack task management application with JWT cookie authentication, role-based admin access, task CRUD operations, dashboard statistics, protected routes, and a React + Tailwind frontend.
-
 # TaskFlow - MERN Stack Task Management System
 
 TaskFlow is a full-stack task management web application built with the MERN stack. It includes user authentication, JWT cookie-based login, protected routes, task CRUD operations, dashboard statistics, and role-based admin functionality.
