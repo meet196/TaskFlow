@@ -33,7 +33,7 @@ function Login() {
           "url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=1600&q=80')" }}>
 
       <div className="bg-white/75 backdrop-blur w-full max-w-md p-8 rounded-xl shadow-xl">
-       <div className="flex justify-center mb-4">
+       <div className="flex justify-center">
     <img src={logo} alt="TaskFlow" className="h-14 w-14"/>
   </div>
 
