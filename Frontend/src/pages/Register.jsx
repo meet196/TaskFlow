@@ -25,11 +25,14 @@ function Register() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=1600&q=80')" }}>
-    <div className="bg-white w-full max-w-md p-8 rounded-xl shadow">
+    <div
+  className="min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=1600&q=80')" }}>
+
+  <div className="bg-white/75 backdrop-blur w-full max-w-md p-8 rounded-xl shadow-xl">
+    
        <div className="flex justify-center ">
          <img src={logo} alt="TaskFlow" className="h-14 w-14"/>
     </div>
