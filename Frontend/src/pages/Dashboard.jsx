@@ -34,21 +34,21 @@ function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div
           onClick={() => navigate("/tasks")}
-          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg transition">
+          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg active:scale-95 transition-transform">
           <h3 className="text-gray-500 text-sm font-medium">Total Tasks</h3>
           <p className="text-4xl font-bold mt-2">{stats.totalTasks}</p>
         </div>
 
         <div
           onClick={() => navigate("/tasks?status=pending")}
-          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg transition">
+          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg active:scale-95 transition-transform">
           <h3 className="text-gray-500 text-sm font-medium">Pending Tasks</h3>
           <p className="text-4xl font-bold mt-2">{stats.pendingTasks}</p>
         </div>
 
         <div
           onClick={() => navigate("/tasks?status=completed")}
-          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg transition">
+          className="bg-white p-6 rounded-xl shadow cursor-pointer hover:shadow-lg active:scale-95 transition-transform">
           <h3 className="text-gray-500 text-sm font-medium">Completed Tasks</h3>
           <p className="text-4xl font-bold mt-2">{stats.completedTasks}</p>
         </div>

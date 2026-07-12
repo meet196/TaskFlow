@@ -1,3 +1,4 @@
+import logo from "../assets/TaskFlow Icon.png";
 import { Link, useNavigate } from "react-router-dom"
 import toast from "react-hot-toast"
 import { useAuth } from "../context/AuthContext"
@@ -18,7 +19,8 @@ function Navbar() {
 
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex items-center justify-between">
-      <div>
+     <div className="flex items-center gap-2">
+        <img src={logo} alt="TaskFlow" className="h-8 w-8 rounded-xl"/>
         <h2 className="text-xl font-bold">TaskFlow</h2>
       </div>
 
@@ -39,7 +41,7 @@ function Navbar() {
           </>
         )}
 
-        {user && (<button onClick={handleLogout}className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded">Logout</button>)}
+        {user && (<button onClick={handleLogout}className="bg-red-500 hover:bg-red-600 active:scale-95 transition-transform px-4 py-2 rounded ">Logout</button>)}
 
       </div>
     </nav>

@@ -91,7 +91,7 @@ function EditTask() {
             type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)}/>
 
           <button
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold"
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold active:scale-95 transition-transform"
             type="submit">Update Task
           </button>
         </form>

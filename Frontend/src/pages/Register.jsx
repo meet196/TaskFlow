@@ -1,3 +1,4 @@
+import logo from "../assets/TaskFlow Icon.png";
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import toast from "react-hot-toast"
@@ -28,7 +29,10 @@ function Register() {
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=1600&q=80')" }}>
-      <div className="bg-white w-full max-w-md p-8 rounded-xl shadow">
+    <div className="bg-white w-full max-w-md p-8 rounded-xl shadow">
+       <div className="flex justify-center ">
+         <img src={logo} alt="TaskFlow" className="h-14 w-14"/>
+    </div>
         <h2 className="text-3xl font-bold text-center mb-6">Register</h2>
 
         <form onSubmit={handleRegister} className="space-y-4">
@@ -61,7 +65,7 @@ function Register() {
           </p>
 
           <button
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold ctive:scale-95 transition-transform"
             type="submit">
             Register
           </button>

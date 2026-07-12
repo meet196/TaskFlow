@@ -36,7 +36,7 @@ function Tasks() {
         <h1 className="text-3xl font-bold">Tasks</h1>
 
         <button onClick={() => navigate("/tasks/create")}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg active:scale-95 transition-transform">
           Create Task
         </button>
       </div>
@@ -61,12 +61,12 @@ function Tasks() {
 
               <div className="flex gap-3 mt-4">
                 <button onClick={() => navigate(`/tasks/edit/${task._id}`)}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">
+                  className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg active:scale-95 transition-transform">
                   Edit
                 </button>
 
                 <button onClick={() => handleDelete(task._id)}
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
+                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg active:scale-95 transition-transform">
                   Delete
                 </button>
               </div>

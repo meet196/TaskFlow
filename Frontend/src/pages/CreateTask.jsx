@@ -68,7 +68,7 @@ function CreateTask() {
             type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)}/>
 
           <button
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold"type="submit">
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold active:scale-95 transition-transform"type="submit">
             Create Task
           </button>
         </form>
